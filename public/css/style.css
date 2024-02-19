@@ -1,0 +1,130 @@
+.body{
+    background-color: #fbf0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* .main-section-background{
+    background-color: #FFF9F9;
+} */
+.font-size-h1{
+    font-size: 3rem !important;
+}
+.footer-section{
+    background-color: #B9FA00;
+    margin-top: 1.5rem;
+}
+
+.img-width{
+    width: 100%;
+}
+.video_size{
+    width: 50%;
+    height: 350px;
+}
+
+.previous_images{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.heading_color{
+    color: #ED1E24;
+}
+
+
+.bt-custom{
+    background-color:#ED1E24 ;
+    color: white;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+
+.div-round{
+    background-color: #F5F7F8;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    
+}
+
+/* .p-columns{
+    
+} */
+
+/* .previous{
+    position: relative;
+} */
+.wining-gift-middle-alignment{
+    position: absolute;  
+    top: 67%;
+    transform: translate(0, -50%);
+    width: 38%;
+}
+.wining-gift-middle-alignment-2{
+    position: absolute;  
+    top: 52%;
+    transform: translate(0, -50%);
+    width: 38%;
+}
+.take-online-class-middle-alignment{
+    position: absolute;  
+    top: 63%;
+    transform: translate(0, -50%);
+    width: 38%;
+}
+.take-online-class-middle-alignment-2{
+    position: absolute;  
+    top: 53%;
+    transform: translate(0, -50%);
+    width: 38%;
+}
+.see-all-fullBox{
+    background-color: #E5E5E6;
+    position: relative;
+    height: 77%;
+}
+
+.see-all-div{
+    position: absolute;
+    top: 36%;
+    transform: translate(35%, 5%);
+    /* right: 50%;
+    transform: translate(-50%, -50%); */
+
+}  
+.see-all-arrow{
+    width: 15%;
+}
+.what-challenges-box{
+    padding: 30px 50px ;
+}
+
+.stick-box{
+    margin-right: 4rem;
+}
+
+.p-fontSize{
+    font-size: 1.25rem;
+}
+/* class page css start */
+.sir-profile-img{
+    width: 10%;
+    border-radius: 50%;
+}
+/* class page css end */
+@media (max-width: 480px) {
+    .p-fontSize{
+        font-size: 1.5rem;
+    }
+
+    .video_size{
+        width: 100%;
+        height: 240px;
+    }
+    
+
+}
