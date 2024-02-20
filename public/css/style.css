@@ -16,16 +16,20 @@
 }
 
 .img-width{
-    width: 100%;
+    width: 80%;
 }
 .video_size{
     width: 50%;
     height: 350px;
 }
+.video_size_class{
+    width: 100%;
+    height: 350px;
+}
 
 .previous_images{
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 
 .heading_color{
@@ -85,7 +89,7 @@
 .see-all-fullBox{
     background-color: #E5E5E6;
     position: relative;
-    height: 77%;
+    height: 100%;
 }
 
 .see-all-div{
@@ -116,6 +120,46 @@
     border-radius: 50%;
 }
 /* class page css end */
+/* admin css start */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar button{
+    margin-left: 20px;
+  }
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 16px;
+  }
+  
+  .open-btn {
+    position: fixed;
+    left: 10px;
+    top: 10%;
+  }
+/* admin css end */
 @media (max-width: 480px) {
     .p-fontSize{
         font-size: 1.5rem;

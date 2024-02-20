@@ -9,12 +9,12 @@
                     <h1 class="heading_color text-center fw-bolder font-size-h1">90 Days grammer challenge</h1>
                     <p class="fs-3">Add body text</p>
 
-                    <iframe class="video_size" src="https://www.youtube.com/embed/0L4rr7DUz-8?si=S3skZa3BnztVK-nn" frameborder="0"></iframe>
+                    <iframe class="video_size" src="{{$currentClass->embed_link}}" frameborder="0"></iframe>
 
                     <div>
-                        <a href="{{route('student.class')}}" class=" mb-1 mt-1 p-fontSize text-decoration-none text-dark"><span class="fw-bolder">Class 7:</span> Tense For IELTS</a>
+                        <a href="{{route('student.class', $currentClass->id)}}" class=" mb-1 mt-1 p-fontSize text-decoration-none text-dark"><span class="fw-bolder">Class {{$currentClass->class_number}}:</span> {{$currentClass->title}}</a>
                         <br>
-                        <a class="text-decoration-none" href="{{route('student.class')}}">Download Materials</a>
+                        <a class="text-decoration-none" href="{{route('student.class', $currentClass->id)}}">Download Materials</a>
                     </div>
                 </div>
             </div>
@@ -28,18 +28,21 @@
                     <h1 class="heading_color my-5  text-center fw-bolder font-size-h1">Previous Classes</h1>
                     
                     <div class="row">
+                        @foreach ($previousClass as $rows)
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                            <img class="previous_images" src="{{asset('images/t.jpg')}}" alt="">
-                            <p class="p-fontSize mt-2"><span class="fw-bolder">Class 7:</span> Tense For IELTS</p>
+                            <iframe class="previous_images" src="{{$rows->embed_link}}" frameborder="0"></iframe>
+                            {{-- <img class="previous_images" src="{{asset('images/t.jpg')}}" alt=""> --}}
+                            <p class="p-fontSize mt-2"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</p>
                         </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
+                        @endforeach
+                        {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                             <img class="previous_images" src="{{asset('images/t1.jpg')}}" alt="">
                             <p class="p-fontSize mt-2"><span class="fw-bolder">Class 7:</span> Tense For IELTS</p>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                             <img class="previous_images" src="{{asset('images/thumbnail.webp')}}" alt="">
                             <p class="p-fontSize mt-2"><span class="fw-bolder">Class 7:</span> Tense For IELTS</p>
-                        </div>
+                        </div> --}}
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                             <div class="see-all-fullBox">
                                 <a class="see-all-div text-decoration-none" href="{{route('student.class.list')}}">

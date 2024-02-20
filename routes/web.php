@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
   
 use App\Http\Controllers\{HomeController, ClassController};
+use App\Http\Controllers\{FrontEndController};
+use App\Http\Controllers\Admin\{CurrentClassController};
   
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +17,14 @@ use App\Http\Controllers\{HomeController, ClassController};
 |
 */
   
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+    Route::get('/', [FrontEndController::class, 'homePage'])->name('homePage');
+
+// });
   
 Auth::routes();
 
-Route::get('/class', [ClassController::class, 'class'])->name('student.class');
+Route::get('/class/{id}', [ClassController::class, 'class'])->name('student.class');
 Route::get('/class-list', [ClassController::class, 'classList'])->name('student.class.list');
 /*------------------------------------------
 --------------------------------------------
@@ -41,6 +44,12 @@ All Admin Routes List
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::controller(CurrentClassController::class)->prefix('admin')->group(function () {
+        Route::get('manage-current-class', 'manage')->name('admin.manage-current-class');
+        Route::get('create-current-class', 'create')->name('admin.create-current-class');
+        Route::post('store-current-class', 'store')->name('admin.store-current-class');
+        Route::get('delete-current-class/{id}', 'delete')->name('admin.delete-current-class');
+    });
 });
   
 

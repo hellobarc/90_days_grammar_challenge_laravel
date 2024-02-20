@@ -14,6 +14,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     {{-- main css --}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <!-- Scripts -->
@@ -80,5 +81,6 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>

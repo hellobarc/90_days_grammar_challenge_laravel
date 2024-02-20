@@ -10,43 +10,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img class="previous_images" src="{{asset('images/t.jpg')}}" alt="">
-                <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img class="previous_images" src="{{asset('images/t1.jpg')}}" alt="">
-                <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img class="previous_images" src="{{asset('images/thumbnail.webp')}}" alt="">
-                <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img class="previous_images" src="{{asset('images/t.jpg')}}" alt="">
-                <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-            </div>
-        </div>
-        <div class="mt-5">
-            <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <img class="previous_images" src="{{asset('images/t.jpg')}}" alt="">
-                    <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
+            @foreach ($data as $rows)
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
+                    <iframe class="previous_images" src="{{$rows->embed_link}}" frameborder="0"></iframe>
+                    <p class="p-fontSize mt-2"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</p>
                 </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <img class="previous_images" src="{{asset('images/t1.jpg')}}" alt="">
-                    <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <img class="previous_images" src="{{asset('images/thumbnail.webp')}}" alt="">
-                    <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <img class="previous_images" src="{{asset('images/t.jpg')}}" alt="">
-                    <p class=" p-fontSize"><b>Class 7:</b> Tense For IELTS</p>
-                </div>
-            </div>
-        </div>
+            @endforeach
+        </div>        
     </div>
 </section>
 <!-- Take online Course -->
