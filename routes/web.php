@@ -23,7 +23,7 @@ use App\Http\Controllers\Admin\{CurrentClassController};
 // });
   
 Auth::routes();
-
+  
 Route::get('/class/{id}', [ClassController::class, 'class'])->name('student.class');
 Route::get('/class-list', [ClassController::class, 'classList'])->name('student.class.list');
 /*------------------------------------------
@@ -48,6 +48,8 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         Route::get('manage-current-class', 'manage')->name('admin.manage-current-class');
         Route::get('create-current-class', 'create')->name('admin.create-current-class');
         Route::post('store-current-class', 'store')->name('admin.store-current-class');
+        Route::get('edit-current-class/{id}', 'edit')->name('admin.edit-current-class');
+        Route::post('update-current-class/{id}', 'update')->name('admin.update-current-class');
         Route::get('delete-current-class/{id}', 'delete')->name('admin.delete-current-class');
     });
 });

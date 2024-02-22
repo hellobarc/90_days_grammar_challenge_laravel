@@ -23,6 +23,26 @@ class CurrentClassController extends Controller
         'title'=>$data['title'],
         'embed_link'=>$data['link'],
         'class_number'=>$data['class_number'],
+        'ebook_link'=>$data['ebook_link'],
+        'test_link'=>$data['test_link'],
+        'class_description'=>$data['class_description'],
+    ]);
+    return redirect()->route('admin.manage-current-class');
+   }
+   public function edit($id)
+   {
+    $getData = classlist::find($id);
+    return view('admin.current-class.edit-current-class', compact('getData'));
+   }
+   public function update(Request $request, $id)
+   {
+    $data = $request->all();
+    classlist::updateOrCreate(['id'=>$id],[
+        'title'=>$data['title'],
+        'embed_link'=>$data['link'],
+        'class_number'=>$data['class_number'],
+        'ebook_link'=>$data['ebook_link'],
+        'test_link'=>$data['test_link'],
         'class_description'=>$data['class_description'],
     ]);
     return redirect()->route('admin.manage-current-class');

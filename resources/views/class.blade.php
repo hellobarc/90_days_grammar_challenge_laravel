@@ -28,12 +28,12 @@
             <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 mx-auto">
                 <h3 class="fw-bold">Download Materials</h3>
                 @if(auth()->user())
-                    <a href="{{route('home')}}" class="text-decoration-none p-fontSize">Free eBook</a><br>
+                    <a href="{{$findData->ebook_link}}" class="text-decoration-none p-fontSize">Free eBook</a><br>
                 @else
                     <a href="{{route('login')}}" class="text-decoration-none p-fontSize">Free eBook</a><br>
                 @endif
                 
-                <a href="#" class="text-decoration-none p-fontSize">Extra Tests</a>
+                <a href="{{$findData->test_link}}" target="_blank" class="text-decoration-none p-fontSize">Extra Tests</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                     @foreach ($previousClass as $rows)
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                         <iframe class="previous_images" src="{{$rows->embed_link}}" frameborder="0"></iframe>
-                        <p class="p-fontSize mt-2"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</p>
+                        <a href="{{route('student.class', $rows->id)}}" class="p-fontSize mt-2 text-decoration-none text-dark"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</a>
                     </div>
                     @endforeach
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
@@ -90,20 +90,16 @@
 <!-- 3 month ielts course -->
 <section class="my-5" style="position: relative;">
     <div class="container">
-        <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="take-online-class-middle-alignment-2">
-                            <p class="fs-3 fw-bold">3 Month IELTS Course</p>
-                            <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <a href="" class="bt-custom float-start">Start Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <img class="img-width" src="{{asset('images/take_online_course.webp')}}" alt="">
-                    </div>
+        <div class="row wining-grand-price">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="take-online-class-middle-alignment-2">
+                    <p class="fs-3 fw-bold">3 Month IELTS Course</p>
+                    <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <a href="" class="bt-custom float-start">Start Now</a>
                 </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img class="img-width" src="{{asset('images/take_online_course.webp')}}" alt="">
             </div>
         </div>
     </div>

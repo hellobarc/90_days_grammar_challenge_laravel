@@ -31,18 +31,9 @@
                         @foreach ($previousClass as $rows)
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                             <iframe class="previous_images" src="{{$rows->embed_link}}" frameborder="0"></iframe>
-                            {{-- <img class="previous_images" src="{{asset('images/t.jpg')}}" alt=""> --}}
-                            <p class="p-fontSize mt-2"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</p>
+                            <a href="{{route('student.class', $rows->id)}}" class="p-fontSize mt-2 text-decoration-none text-dark"><span class="fw-bolder">Class {{$rows->class_number}}:</span> {{$rows->title}}</a>
                         </div>
                         @endforeach
-                        {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                            <img class="previous_images" src="{{asset('images/t1.jpg')}}" alt="">
-                            <p class="p-fontSize mt-2"><span class="fw-bolder">Class 7:</span> Tense For IELTS</p>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                            <img class="previous_images" src="{{asset('images/thumbnail.webp')}}" alt="">
-                            <p class="p-fontSize mt-2"><span class="fw-bolder">Class 7:</span> Tense For IELTS</p>
-                        </div> --}}
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                             <div class="see-all-fullBox">
                                 <a class="see-all-div text-decoration-none" href="{{route('student.class.list')}}">
@@ -81,9 +72,9 @@
     <!-- win grand prize -->
     <section class="my-5" style="position: relative;">
         <div class="container">
-            <div class="row">
-                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="row">
+            <div class="">
+                <div class="">
+                    <div class="row wining-grand-price">
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                            <div class="wining-gift-middle-alignment-2">
                                 <p class="fs-3 fw-bold"><b>Win grand Prize</b></p>
@@ -113,7 +104,7 @@
                             <div class="take-online-class-middle-alignment">
                                 <p class="fs-3 fw-bold">1 Month IELTS Advanced Course</p>
                                 <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="" class="bt-custom float-start">Start Now</a> 
+                                <a href="{{route('student.class', $previousClass[0]->id)}}" class="bt-custom float-start">Start Now</a> 
                             </div>
                         </div>
                     </div>
@@ -124,20 +115,16 @@
     <!-- 3 month ielts course -->
     <section class="my-5" style="position: relative;">
         <div class="container">
-            <div class="row">
-                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="take-online-class-middle-alignment-2">
-                                <p class="fs-3 fw-bold">3 Month IELTS Course</p>
-                                <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="" class="bt-custom float-start">Start Now</a>
-                            </div>
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <img class="img-width" src="{{asset('images/take_online_course.webp')}}" alt="">
-                        </div>
+            <div class="row wining-grand-price">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="take-online-class-middle-alignment-2">
+                        <p class="fs-3 fw-bold">3 Month IELTS Course</p>
+                        <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="{{route('student.class', $id=1)}}" class="bt-custom float-start">Start Now</a>
                     </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-width" src="{{asset('images/take_online_course.webp')}}" alt="">
                 </div>
             </div>
         </div>

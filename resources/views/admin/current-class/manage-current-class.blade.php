@@ -24,6 +24,7 @@
                                 <td><iframe src="{{$rows->embed_link}}" width="500" height="60" frameborder="0"></iframe></td>
                                 <td>{{$rows->class_number}}</td>
                                 <td>
+                                    <a href="{{route('admin.edit-current-class', $rows->id)}}" class="btn btn-success btn-sm">Edit</a>
                                     <a href="{{route('admin.delete-current-class', $rows->id)}}" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                             </tr>

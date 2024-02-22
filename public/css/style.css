@@ -169,6 +169,46 @@
         width: 100%;
         height: 240px;
     }
-    
+    .see-all-fullBox{
+        margin-top: 2%;
+        height: 230px;
+    }
+    .wining-gift-middle-alignment {
+        position: inherit;
+         top: 0; 
+        transform: none;
+         width: 100%;
+    }
+    .wining-gift-middle-alignment-2{
+        position: inherit;
+         top: 0; 
+        transform: none;
+         width: 100%;
+    }
+    .take-online-class-middle-alignment{
+        position: inherit;
+        top: 0; 
+       transform: none;
+        width: 100%;
+    }
+    .take-online-class-middle-alignment-2{
+        position: inherit;
+        top: 0; 
+       transform: none;
+        width: 100%;
+    }
+    .wining-grand-price{
+        display: flex;
+        flex-direction:  column-reverse;
+    }
+    .img-width{
+        width: 100%;
+    }
+    .previous_images{
+        height: 240px;
+    }
+    .sir-profile-img{
+        width: 28%;
+    }
 
 }
