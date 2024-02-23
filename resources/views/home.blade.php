@@ -3,16 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-3 mx-auto">
-            <div class="card">
-                <div class="card-header">DownLoad Link</div>
-  
-                <div class="card-body">
-                   
-                   <a href="#" class="text-decoration-none">Click Here</a>
+        @foreach ($data as $rows)
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">Class {{$rows->class_number}} E-book link</div>
+                    <div class="card-body">
+                        <a href="{{$rows->ebook_link}}" class="text-decoration-none">Download Here</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2024 at 01:26 PM
+-- Generation Time: Feb 23, 2024 at 06:57 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -152,7 +152,9 @@ CREATE TABLE `student_proifles` (
 --
 
 INSERT INTO `student_proifles` (`id`, `student_id`, `phone`, `preparation_course`, `created_at`, `updated_at`) VALUES
-(1, 4, '01521210037', 'yes', '2024-02-22 06:08:10', '2024-02-22 06:08:10');
+(1, 4, '01521210037', 'yes', '2024-02-22 06:08:10', '2024-02-22 06:08:10'),
+(2, 5, '01521210037', 'yes', '2024-02-22 22:56:52', '2024-02-22 22:56:52'),
+(3, 6, '01521210037', 'yes', '2024-02-22 22:57:47', '2024-02-22 22:57:47');
 
 -- --------------------------------------------------------
 
@@ -179,7 +181,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `type`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Admin User', 'admin@barc.com', NULL, '$2y$12$oq/aGZQsajRDt/COX.7S9OrDfARirsDQHBpDSdext9GpFiWJF4VOy', 1, NULL, '2024-02-19 00:29:52', '2024-02-19 00:29:52'),
 (2, 'User', 'user@barc.com', NULL, '$2y$12$Sifl.yoqBWq0Mt.KOUlVR.DKrl.kgQMcya2YgBhimbyHiAcXmbQyW', 0, NULL, '2024-02-19 00:29:52', '2024-02-19 00:29:52'),
-(4, 'Minar Ahmed', 'minar.barc@gmail.com', NULL, '$2y$12$8BBxDqBclvbE8FWhEdB.iuuyPZDVDPAr.oNP1MV2/XdN.bdbvhmCK', 0, NULL, '2024-02-22 06:08:10', '2024-02-22 06:08:10');
+(6, 'Minar Ahmed', 'minar.barc@gmail.com', NULL, '$2y$12$tW789iZ0g3Hjzx2r5e/XWO8INOxtMrXgqrD/uQcuXXfggB2cnMCe.', 0, NULL, '2024-02-22 22:57:47', '2024-02-22 22:57:47');
 
 --
 -- Indexes for dumped tables
@@ -269,13 +271,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `student_proifles`
 --
 ALTER TABLE `student_proifles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
