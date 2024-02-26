@@ -60,8 +60,11 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="wining-gift-middle-alignment">
                                 <p class="fs-3 fw-bolder">Take a text and win exciting gifts</p>
-                                <p class="p-fontSize">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="" class="bt-custom float-start">Take a test</a>
+                                <p class="p-fontSize">
+                                    Get ready to compete for exciting gifts in every episode – simply participate and strive for the most correct answers to claim your victory.
+                                    Don't miss out on your chance to win,
+                                </p>
+                                <a href="#" class="bt-custom float-start">Take a test</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +81,9 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                            <div class="wining-gift-middle-alignment-2">
                                 <p class="fs-3 fw-bold"><b>Win grand Prize</b></p>
-                                <p class="p-fontSize">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="p-fontSize">
+                                    Join our 90-day program with 12 live classes. Attend all sessions, score the highest, and win round-trip air tickets from Dhaka to Cox's Bazar.
+                                </p>
                                 <a href="" class="bt-custom float-start">Take a test</a>
                            </div>
                         </div>
@@ -103,7 +108,9 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="take-online-class-middle-alignment">
                                 <p class="fs-3 fw-bold">1 Month IELTS Advanced Course</p>
-                                <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="p-fontSize">
+                                    Master all 4 modules, score high, unlock your future! Achieve your desired score. Starts from 4,990 taka. Enroll now & conquer the IELTS!
+                                </p>
                                 <a href="{{route('student.class', $previousClass[0]->id)}}" class="bt-custom float-start">Start Now</a> 
                             </div>
                         </div>
@@ -119,7 +126,9 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="take-online-class-middle-alignment-2">
                         <p class="fs-3 fw-bold">3 Month IELTS Course</p>
-                        <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="p-fontSize">
+                            Unlock your full potential with our intensive 3-month IELTS Course! Join us to master essential skills, boost your confidence, and ace the IELTS exam. Course starts from 9,990 taka.
+                        </p>
                         <a href="{{route('student.class', $id=1)}}" class="bt-custom float-start">Start Now</a>
                     </div>
                 </div>
@@ -130,7 +139,7 @@
         </div>
     </section>
     <!-- 90 Days Grammar challenge -->
-    <section style="background:#fff !important;" class="py-5">
+   <!-- <section style="background:#fff !important;" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -160,32 +169,38 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- This is why you should stick 90 days -->
     <section style="background:#fff !important;" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="heading_color text-center fw-bolder font-size-h1 mb-5">What is 90 Days Grammar challenge?</h1>
+                    <h1 class="heading_color text-center fw-bolder font-size-h1 mb-5">This is why you should stick 90 days</h1>
                     <div class="row">
                         <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12 mx-auto">
                             <div class="row">
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="">
-                                        <p class="fs-3 p-columns"><b>Reason 1</b></p>
-                                        <p class="stick-box p-fontSize">Starting from February 15. body textAdd a little bit of body textAdd a little bit of body textAdd a little bit of body text</p>
+                                        <p class="fs-3 p-columns fw-bolder">Active Learning</p>
+                                        <p class="stick-box p-fontSize">
+                                            Transform into a grammar pro through active learning. Test and improve your grammar skills as you join our interactive journey.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="">
-                                        <p class="fs-3 p-columns"><b>Reason 2</b></p>
-                                        <p class="stick-box p-fontSize">Starting from February 15. body textAdd a little bit of body textAdd a little bit of body textAdd a little bit of body text</p>
+                                        <p class="fs-3 p-columns fw-bolder">Master IELTS Grammar</p>
+                                        <p class="stick-box p-fontSize">
+                                            Get ready to win thrilling prizes weekly, with a grand prize of a Dhaka-Cox's Bazar-Dhaka air ticket after 90 days! Don't miss out on the excitement.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="">
-                                        <p class="fs-3 p-columns"><b>Reason 3</b></p>
-                                        <p class="stick-box p-fontSize">Starting from February 15. body textAdd a little bit of body textAdd a little bit of body textAdd a little bit of body text</p>
+                                        <p class="fs-3 p-columns fw-bolder">Exciting Prizes</p>
+                                        <p class="stick-box p-fontSize">
+                                            Sign up for the 90-day Grammar Challenge and gain access to 12 expertly crafted IELTS grammar classes, absolutely free. Elevate your language skills.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

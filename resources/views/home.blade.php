@@ -14,5 +14,12 @@
             </div>
         @endforeach
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-end mt-3">
+                <a href="{{url('/')}}" class="btn btn-danger btn-sm px-3">Back to home</a>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

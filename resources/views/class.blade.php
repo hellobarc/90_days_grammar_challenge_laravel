@@ -78,7 +78,9 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="take-online-class-middle-alignment">
                             <p class="fs-3 fw-bold">1 Month IELTS Advanced Course</p>
-                            <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p class="p-fontSize">
+                                Master all 4 modules, score high, unlock your future! Achieve your desired score. Starts from 4,990 taka. Enroll now & conquer the IELTS!
+                            </p>
                             <a href="" class="bt-custom float-start">Start Now</a> 
                         </div>
                     </div>
@@ -94,8 +96,10 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="take-online-class-middle-alignment-2">
                     <p class="fs-3 fw-bold">3 Month IELTS Course</p>
-                    <p class="p-fontSize">Start From February 15. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <a href="" class="bt-custom float-start">Start Now</a>
+                    <p class="p-fontSize">
+                        Unlock your full potential with our intensive 3-month IELTS Course! Join us to master essential skills, boost your confidence, and ace the IELTS exam. Course starts from 9,990 taka.
+                    </p>
+                    <a href="#" class="bt-custom float-start">Start Now</a>
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
